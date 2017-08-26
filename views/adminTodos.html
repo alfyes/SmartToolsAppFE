@@ -1,0 +1,28 @@
+<div id="wrapper">
+  <div class="container">
+      <div class="col-md-offset-4 col-md-4">
+          <form ng-submit="cuTodo();">
+            <fieldset class="cajaBlancaSombra">
+              <h2>TODOS</h2>
+              <div class="form-group">
+                <input required ng-model="todoNuevo.title" type="text" class="form-control" placeholder="Titulo" aria-describedby="sizing-addon1">
+              </div>
+              <br>
+              <div class="form-group">
+                <label>Completada:</label><input  type="checkbox" ng-model="todoNuevo.completed"  placeholder="Completada" class="form-control">
+              </div>
+              <br>
+              <div class="form-group">
+                <input required ng-model="todoNuevo.order" type="text" class="form-control" placeholder="Order" aria-describedby="sizing-addon1>
+              </div>
+              <br>
+              <br>
+              <div class="form-group" style="text-align:center;">
+                <input type="submit" value="Agregar" class="btn btn-success btn-block">
+                <button type="button" name="button" class="btn btn-danger btn-block" ng-click="cancelar();">Cancelar</button>
+              </div>
+            </fieldset>
+          </form>
+      </div>
+  </div>
+</div>
